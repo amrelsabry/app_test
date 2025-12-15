@@ -8,8 +8,8 @@ class CardInfo extends StatelessWidget {
     return  Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: SizedBox(
-                    height: 100,
-                    width: 250,
+                    height: 123,
+                    width: 255,
                     child: Card(
                       elevation: 4,
                       color: Colors.blueGrey.shade500,

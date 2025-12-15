@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
               children: [
                 // HeaderText
                 HeaderText(),
-                const SizedBox(height: 40,),
+                const SizedBox(height: 24,),
                 // card info
                 Wrap(
                   spacing: 10,
