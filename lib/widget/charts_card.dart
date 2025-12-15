@@ -5,28 +5,31 @@ class ChartsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          flex: 2,
-          child: Card(
-            color: Colors.blue,
-            child: SizedBox(
-              height: double.infinity,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: Row(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Card(
+              color: Colors.blue,
+              child: SizedBox(
+                height: double.infinity,
+              ),
             ),
           ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          flex: 1,
-          child: Card(
-            color: Colors.yellowAccent,
-            child: SizedBox(
-              height: double.infinity,
+          const SizedBox(width: 10),
+          Expanded(
+            flex: 1,
+            child: Card(
+              color: Colors.yellowAccent,
+              child: SizedBox(
+                height: double.infinity,
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

@@ -6,10 +6,10 @@ class CardInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 16),
                   child: SizedBox(
-                    height: 123,
-                    width: 255,
+                    height: 133,
+                    width: 290,
                     child: Card(
                       elevation: 4,
                       color: Colors.blueGrey.shade500,

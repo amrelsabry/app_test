@@ -18,14 +18,13 @@ class HomeView extends StatelessWidget {
           // content page
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // HeaderText
                 HeaderText(),
-                const SizedBox(height: 24,),
+
                 // card info
                 Wrap(
-                  spacing: 10,
-                  runAlignment: WrapAlignment.spaceBetween,
                   children: [
                       CardInfo(),
                       CardInfo(),
