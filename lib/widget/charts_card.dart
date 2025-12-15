@@ -8,17 +8,23 @@ class ChartsCard extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: SizedBox(
-            height: MediaQuery.of(context).size.height * 0.71,
-            width: MediaQuery.of(context).size.width * 0.45,
-            child: Card(color: Colors.red),
+          flex: 2,
+          child: Card(
+            color: Colors.red,
+            child: SizedBox(
+              height: double.infinity,
+            ),
           ),
         ),
         const SizedBox(width: 10),
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.71,
-          width: MediaQuery.of(context).size.width * 0.30,
-          child: Card(color: Colors.yellowAccent),
+        Expanded(
+          flex: 1,
+          child: Card(
+            color: Colors.yellowAccent,
+            child: SizedBox(
+              height: double.infinity,
+            ),
+          ),
         ),
       ],
     );

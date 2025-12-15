@@ -33,16 +33,19 @@ class HomeView extends StatelessWidget {
                       CardInfo(),
                   ],
                 ),
-          
+                      
                 // content page
-                Wrap(
-                  spacing: 16,
-                  runSpacing: 16,
-                  children: [
-                  ChartsCard(),
-
-                  ],
+                Expanded(
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      return SizedBox(
+                        height: constraints.maxHeight,
+                        child: ChartsCard(),
+                      );
+                    },
+                  ),
                 ),
+
               ],
             ),
           ),
