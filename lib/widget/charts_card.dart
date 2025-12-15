@@ -10,7 +10,7 @@ class ChartsCard extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Card(
-            color: Colors.red,
+            color: Colors.blue,
             child: SizedBox(
               height: double.infinity,
             ),
