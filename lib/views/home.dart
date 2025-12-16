@@ -22,14 +22,14 @@ class HomeView extends StatelessWidget {
               children: [
                 // HeaderText
                 HeaderText(),
-
+            
                 // card info
-                Wrap(
+                Row(
                   children: [
-                      CardInfo(),
-                      CardInfo(),
-                      CardInfo(),
-                      CardInfo(),
+                    Expanded(child: CardInfo()),
+                    Expanded(child: CardInfo()),
+                    Expanded(child: CardInfo()),
+                    Expanded(child: CardInfo()),
                   ],
                 ),
                       
@@ -44,7 +44,7 @@ class HomeView extends StatelessWidget {
                     },
                   ),
                 ),
-
+            
               ],
             ),
           ),
